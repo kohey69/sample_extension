@@ -1,0 +1,22 @@
+{
+  "name": "OnisanGaKochira",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Make you realize WORLD messages Chrome Extensions",
+  "content_scripts": [{
+    "matches": ["https://www.sonicgarden.world/*"],
+    "js": ["content.js"],
+    "css": ["style.css"],
+    "run_at": "document_idle"
+  }],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "/images/blue-demon-1.gif",
+        "/images/red-demon.gif",
+        "/images/awesome.gif"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
